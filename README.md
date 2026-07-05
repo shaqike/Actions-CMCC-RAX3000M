@@ -36,7 +36,8 @@
 ## 已知问题
 #### 免责声明：以下已知问题均为个人实测，可能还有未知问题，本人不对因固件导致的任何问题承担任何责任
 
-* 已知237源码集成Mediatek HNAT加速会导致App图片等资源加载异常，要一劳永逸的话直接关掉，要同时使用并且尽量缓解症状的话可以关闭ipv6且将HNAT连接速率绑定阈值调至1
+* ~~已知237源码集成Mediatek HNAT加速会导致App图片等资源加载异常，要一劳永逸的话直接关掉，要同时使用并且尽量缓解症状的话可以关闭ipv6且将HNAT连接速率绑定阈值调至1~~(chasey-dev源码无此问题)
+* turboacc仅开启BBR算法可用，请勿打开其中的硬件加速选项，mtk硬件加速已经默认开启，与turboacc中的硬件加速以及防火墙中的路由/NAT卸载功能冲突，打开会无限重启。
 
 ## 感谢
 
@@ -50,6 +51,6 @@
 
 ## 所用源码
 
-* [hanwckf(历史,2025.10-2025.12)](https://github.com/hanwckf/immortalwrt-mt798x)
-* [237(历史,2025.12-2026.7)](https://github.com/padavanonly/immortalwrt-mt798x-6.6)
-* [chasey-dev(目前使用)](https://github.com/padavanonly/immortalwrt-mt798x-6.6)
+* [hanwckf](https://github.com/hanwckf/immortalwrt-mt798x)(历史,2025.10-2025.12)
+* [237](https://github.com/padavanonly/immortalwrt-mt798x-6.6)(历史,2025.12-2026.7)
+* [chasey-dev](https://github.com/padavanonly/immortalwrt-mt798x-6.6)(目前使用)
