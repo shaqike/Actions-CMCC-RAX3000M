@@ -27,7 +27,6 @@
 ## 其它教程（大多数教程均来自互联网，此处作备份用） <a id="tutorial"></a>
 
 * [如何更新固件](tutorial/ru-he-geng-xin-gu-jian.md)
-* [让AdGuard Home和OpenClash共存(自己做的设置，测试适用于本固件)](tutorial/adguard-openclash.md)
 
 ## 截图
 
@@ -39,6 +38,12 @@
 * ~~已知237源码集成的Mediatek HNAT加速，在WiFi连接下会导致App图片等资源加载异常，要一劳永逸的话直接关掉，非要同时使用并且想尽量缓解症状的话可以关闭ipv6且将HNAT连接速率绑定阈值调至1~~(chasey-dev源码无此问题)
 * turboacc仅开启BBR算法可用，请勿打开其中的硬件加速选项，mtk硬件加速已经默认开启，与turboacc中的硬件加速以及防火墙中的路由/NAT卸载功能冲突，打开会无限重启。
 
+## 所用源码
+
+* [hanwckf](https://github.com/hanwckf/immortalwrt-mt798x)(immortalwrt 21.02,历史,2025.10-2025.12)
+* [237](https://github.com/padavanonly/immortalwrt-mt798x-6.6)(immortalwrt 24.10,历史,2025.12-2026.7)
+* [chasey-dev](https://github.com/chasey-dev/immortalwrt-mt798x-rebase)(immortalwrt 25.12,目前使用)
+
 ## 感谢
 
 * [Microsoft Azure](https://azure.microsoft.com/)
@@ -48,9 +53,3 @@
 * [tmate](https://github.com/tmate-io/tmate)
 * [P3TERX](https://github.com/P3TERX)<br>
 * 以及所有跟OpenWRT/ImmortalWrt等相关的贡献者
-
-## 所用源码
-
-* [hanwckf](https://github.com/hanwckf/immortalwrt-mt798x)(immortalwrt 21.02,历史,2025.10-2025.12)
-* [237](https://github.com/padavanonly/immortalwrt-mt798x-6.6)(immortalwrt 24.10,历史,2025.12-2026.7)
-* [chasey-dev](https://github.com/chasey-dev/immortalwrt-mt798x-rebase)(immortalwrt 25.12,目前使用)
